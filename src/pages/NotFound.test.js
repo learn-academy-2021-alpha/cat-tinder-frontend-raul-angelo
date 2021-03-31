@@ -1,17 +1,18 @@
 import React from 'react';
 import Enzyme, { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-import CatNew from './catNew'
+import NotFound from './NotFound'
+
 
 Enzyme.configure({ adapter: new Adapter() })
 
 describe('When App loads', () => {
-  let renderedCatNew;
+  let renderedNotFound;
   beforeEach(() => {
-    renderedCatNew = shallow(<CatNew />);
+    renderedNotFound = shallow(<NotFound />);
   });
-  it('shows CatNew', () => {
-    const div = renderedCatNew.find('div');
+  it('shows Not Found', () => {
+    const div = renderedNotFound.find('div');
     expect(div.length).toEqual(1)
   })
 })
