@@ -5,7 +5,7 @@ import CatIndex from './catIndex'
 
 Enzyme.configure({ adapter: new Adapter() })
 
-describe('When App runs', () => {
+describe('When App loads', () => {
   let renderedCatIndex;
   beforeEach(() => {
     renderedCatIndex = shallow(<CatIndex />);

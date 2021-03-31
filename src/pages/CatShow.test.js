@@ -5,7 +5,7 @@ import CatShow from './catShow'
 
 Enzyme.configure({ adapter: new Adapter() })
 
-describe('When App runs', () => {
+describe('When App loads', () => {
   let renderedCatShow;
   beforeEach(() => {
     renderedCatShow = shallow(<CatShow />);

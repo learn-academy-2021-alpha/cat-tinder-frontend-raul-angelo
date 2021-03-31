@@ -5,7 +5,7 @@ import CatEdit from './catEdit'
 
 Enzyme.configure({ adapter: new Adapter() })
 
-describe('When App runs', () => {
+describe('When App loads', () => {
   let renderedCatEdit;
   beforeEach(() => {
     renderedCatEdit = shallow(<CatEdit />);

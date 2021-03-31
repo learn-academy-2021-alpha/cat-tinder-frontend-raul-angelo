@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 class Footer extends Component {
 	render() {
-		return <span className='footer'>Footer</span>;
+		return <div className='footer'>Footer</div>;
 	}
 }
 export default Footer;
