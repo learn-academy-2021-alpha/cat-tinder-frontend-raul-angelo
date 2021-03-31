@@ -10,6 +10,8 @@ import NotFound from "./pages/NotFound";
 import cats from "./mockCats.js";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
+
+
 class App extends Component {
 	render() {
 		return (
@@ -23,7 +25,7 @@ class App extends Component {
 					<Route path='/catedit' component={CatEdit} />
 					<Route component={NotFound} />
 				</Switch>
-				<div class='footer'>footer</div>
+				<div className='footer'>footer</div>
 			</Router>
 		);
 	}
