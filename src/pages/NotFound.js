@@ -3,9 +3,12 @@ import React, { Component } from "react";
 class NotFound extends Component {
 	render() {
 		return (
-		<>
-		NotFound oops
-		</>
-	)}
+			<>
+			<div>
+			NotFound
+			</div>
+			</>
+		)
+	}
 }
 export default NotFound;

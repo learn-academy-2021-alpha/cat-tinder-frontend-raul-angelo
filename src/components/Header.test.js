@@ -1,17 +1,18 @@
 import React from 'react';
 import Enzyme, { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-import CatEdit from './header'
+import Header from './header'
+
 
 Enzyme.configure({ adapter: new Adapter() })
 
-describe('When App loads', () => {
-  let renderedheader;
+describe('When App runs', () => {
+  let renderedHeader;
   beforeEach(() => {
-    renderedheader = shallow(<CatEdit />);
+    renderedHeader = shallow(<Header />);
   });
   it('shows Header', () => {
-    const h1= renderedheader.find('h1');
+    const h1 = renderedHeader.find('h1');
     expect(h1.length).toEqual(1)
   })
 })
