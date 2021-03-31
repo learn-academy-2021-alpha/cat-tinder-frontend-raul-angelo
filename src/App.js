@@ -44,15 +44,4 @@ class App extends Component {
 	}
 }
 
-// class App extends Component {
-// 	render() {
-// 		return (
-// 			<>
-// 				<Header />
-// 				<Footer />
-// 			</>
-// 		);
-// 	}
-// }
-
 export default App;

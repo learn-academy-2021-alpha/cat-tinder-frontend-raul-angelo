@@ -1,6 +1,12 @@
 .App {
 	text-align: center;
 }
+body {
+	background-color: #ff745c;
+}
+.home {
+	text-align: center;
+}
 
 .App-logo {
 	height: 40vmin;
@@ -19,10 +25,12 @@
 
 .display-3 {
 	font-size: 10rem !important;
+	text-align: center;
 }
 
 .lead {
 	font-size: 2rem !important;
+	text-align: center;
 }
 
 .App-header {

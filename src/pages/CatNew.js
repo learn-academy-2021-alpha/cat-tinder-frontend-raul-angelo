@@ -2,7 +2,13 @@ import React, { Component } from "react";
 
 class CatNew extends Component {
 	render() {
-		return <>CatNew</>;
+		return (
+			<>
+			<div>
+			CatNew
+			</div>
+			</>
+		)
 	}
 }
 export default CatNew;

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 class CatShow extends Component {
+
   render() {
     const cat = this.props.cat;
     console.log(cat)
