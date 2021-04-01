@@ -7,7 +7,31 @@ body {
 .home {
 	text-align: center;
 }
+.agebox {
+	text-align: center;
+	font-weight: bold;
+}
 
+.jumbotron.jumbotron-fluid {
+  background-color: #ff745c !important;
+  color: black !important;
+  padding: 0px;
+  text-decoration: none !important;
+}
+
+.namebox {
+	text-align: center;
+	font-weight: bold;
+}
+
+.enjoybox {
+	text-align: center;
+	font-weight: bold;
+}
+
+.submitbox {
+	text-align: center;
+}
 .App-logo {
 	height: 40vmin;
 	pointer-events: none;
