@@ -20,6 +20,10 @@ class App extends Component {
 		}
 	}
 
+	createNewCat = (newcat) => {
+	console.log(newcat)
+}
+
 	render() {
     return (
       <Router>
