@@ -20,6 +20,7 @@ class App extends Component {
 		}
 	}
 
+
 		componentDidMount(){
 	    this.catIndex()
 	  }
@@ -84,5 +85,4 @@ class App extends Component {
 		);
 	}
 }
-
-export default App;
+export default App

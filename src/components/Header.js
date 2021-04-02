@@ -12,6 +12,7 @@ const Header = () => {
       <Jumbotron fluid>
         <Container fluid>
           <h1 className="display-3">Cat Tinder</h1>
+          <img src="https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554_1280.jpg" alt="tiny white kitty" />
           <p className="lead">Like Tinder but for cats.</p>
         </Container>
         <Navbar color="faded" light>
