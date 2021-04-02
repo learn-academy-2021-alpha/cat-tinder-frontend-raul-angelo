@@ -16,9 +16,50 @@ class App extends Component {
 	constructor(props){
 		super(props)
 		this.state = {
-			cats: cats
+			cats: []
 		}
 	}
+
+		componentDidMount(){
+	    this.catIndex()
+	  }
+
+		catIndex = () => {
+		    fetch("http://localhost:3000/cats")
+		    .then(response => {
+		      return response.json()
+		    })
+		    .then(catsArray => {
+		      console.log(catsArray)
+		      this.setState({ cats: catsArray })
+		    })
+		    .catch(errors => {
+		      console.log("index errors:", errors)
+		    })
+		  }
+
+		createNewCat = (newCat) => {
+    fetch("http://localhost:3000/cats", {
+      body: JSON.stringify(newCat),
+      headers: {
+        "Content-Type": "application/json"
+      },
+      method: "POST"
+    })
+    .then(response => {
+      if(response.status === 422){
+        alert("Something is wrong with your submission.")
+      }
+      return response.json()
+    })
+    .then(payload => {
+      this.catIndex()
+    })
+    .catch(errors => {
+      console.log("create errors:", errors)
+    })
+  }
+
 
 	render() {
     return (
